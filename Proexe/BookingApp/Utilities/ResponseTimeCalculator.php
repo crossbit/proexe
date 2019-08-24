@@ -8,8 +8,12 @@
 namespace Proexe\BookingApp\Utilities;
 
 
-class ResponseTimeCalculator {
+use Proexe\BookingApp\Offices\Interfaces\ResponseTimeCalculatorInterface;
 
-	//Write your methods here
-
+class ResponseTimeCalculator implements ResponseTimeCalculatorInterface
+{
+    public function calculate($bookingDateTime, $responseDateTime, $officeHours)
+    {
+        
+    }
 }
